@@ -4,14 +4,14 @@ const fetch = require('node-fetch'),
     request = require('request'),
     client = new Discord.Client(),
     XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest,
-    admins = ["687910429615194118", "yourid", "yourid"],
+    admins = ["yourid", "yourid", "yourid"],
     config = {
-        "837007126148546611": 1500,
-        "837006470637420632": 75,
-        "837006459740618782": 50,
-        "837006452332822528": 20,
-        "837006439540719687": 10,
-        "837006424818319371": 5
+        "yourroleid": 1500,
+        "yourroleid": 75,
+        "yourroleid": 50,
+        "yourroleid": 20,
+        "yourroleid": 10,
+        "yourroleid": 5
     }
 
 var tokens = fs.readFileSync('./tokens.txt', 'utf-8');
@@ -105,7 +105,7 @@ client.on('message', async (message) => {
         });
     }
     if (command === "tfollow") {
-        let twitchID = "837007126148546611";
+        let twitchID = "";
 
         if (admins.includes(message.author.id)) {
 
@@ -245,4 +245,4 @@ client.on("guildMemberAdd", async (member) => {
     }
 })
 
-client.login("ODE3MzUzOTk2MDg3ODUzMDU2.YEISOg.2lsiqXB220Ln7H4-5nK3sJF_x64")
+client.login("Token")
